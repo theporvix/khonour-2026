@@ -1,0 +1,13 @@
+{
+  "name": "khonour-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "K Honour Group bilingual (TH/EN) homepage redesign",
+  "type": "module",
+  "scripts": {
+    "images": "python3 -I tools/build-images.py && python3 -I tools/build-gallery.py && python3 -I tools/build-map.py",
+    "build": "node build.mjs",
+    "serve": "node tools/serve.mjs",
+    "dev": "node build.mjs && node tools/serve.mjs"
+  }
+}
